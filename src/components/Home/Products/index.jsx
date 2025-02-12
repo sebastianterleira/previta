@@ -88,11 +88,11 @@ export default function MarqueeCards() {
       </div>
 
       <div className={styles.button_container}>
-        <BtnRound>
+        {/* <BtnRound>
           <a href="/productos" className={styles.btn}>
             Todos los productos
           </a>
-        </BtnRound>
+        </BtnRound> */}
       </div>
     </section>
   );
