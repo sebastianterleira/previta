@@ -3,7 +3,7 @@
   width: 100%;
   /* Puedes ajustar el padding o margin según tu diseño */
   margin-top: 15rem;
-  margin-bottom: 15rem;
+  margin-bottom: 12rem;
 }
 
 .marquee {
@@ -82,7 +82,7 @@
 .button_container {
   display: flex;
   justify-content: center;
-  margin-top: 6rem;
+  margin-top: 4rem;
 }
 
 .btn {
