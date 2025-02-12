@@ -92,11 +92,15 @@
   display: flex;
   justify-content: center;
   margin-top: 4rem;
+  margin-bottom: 3rem;
 }
 
 .btn {
   font-family: "Previta Sans";
-  padding: 0.9rem;
+  padding: .9rem;
+  font-size: 1.225rem;
+  font-weight: 800;
+  color: #5e7099;
 }
 
 .title_container {

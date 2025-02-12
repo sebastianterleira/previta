@@ -88,11 +88,18 @@ export default function MarqueeCards() {
       </div>
 
       <div className={styles.button_container}>
-        {/* <BtnRound>
+        <BtnRound
+          style={{
+            background: "#F0F7FF",
+            border: "1px solid #fff",
+            overflow: "hidden",
+            boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+          }}
+        >
           <a href="/productos" className={styles.btn}>
             Todos los productos
           </a>
-        </BtnRound> */}
+        </BtnRound>
       </div>
     </section>
   );
