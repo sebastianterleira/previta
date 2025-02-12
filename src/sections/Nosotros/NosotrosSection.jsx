@@ -7,7 +7,7 @@ import SectionContact from "../../components/Home/SectionContact";
 import FooterIndex from "../../components/Footer";
 import Mision from "../../components/About/Mision";
 
-export default function Nosotros() {
+export default function NosotrosSection() {
   useEffect(() => {
     (async () => {
       const LocomotiveScroll = (await import("locomotive-scroll")).default;
