@@ -1,0 +1,105 @@
+.marqueeContainer {
+  overflow: hidden;
+  width: 100%;
+  /* Puedes ajustar el padding o margin según tu diseño */
+  margin-top: 15rem;
+  margin-bottom: 15rem;
+}
+
+.marquee {
+  display: flex;
+  white-space: nowrap;
+}
+
+.card {
+  flex: 0 0 auto; /* Evita que las cards se encogen */
+  width: 440px; /* Ancho de cada card, ajústalo a tu gusto */
+  height: 424px;
+  margin-right: 32px;
+  background-color: #ddd;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.info_card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 40px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  z-index: 10;
+}
+
+.title {
+  font-family: "Previta Care", sans-serif;
+  color: #000;
+  font-size: 2rem;
+  letter-spacing: -0.1rem;
+  line-height: 2.4rem;
+}
+
+.category {
+  font-family: "Previta Care", sans-serif;
+  color: #000000a9;
+  font-size: 2rem;
+  letter-spacing: -0.1rem;
+  width: 20%;
+  line-height: 2.4rem;
+}
+
+.img_card {
+  position: relative;
+}
+
+.img_card img{
+  border-radius: 5px;
+}
+
+.button_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 6rem;
+}
+
+.btn {
+  font-family: "Previta Sans";
+  padding: 0.9rem;
+}
+
+.title_container {
+  display: flex;
+  margin-bottom: 2rem;
+  padding: 0 2rem;
+}
+
+
+.title_container p {
+  font-family: "Previta Sans";
+  font-size: 1.8rem;
+  color: #000;
+  font-weight: 100;
+}

@@ -1,0 +1,163 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.section h2 {
+  color: #fff;
+  font-size: 1.6rem;
+  text-align: center;
+  word-break: break-word;
+}
+
+.select-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #5b5555;
+  border-radius: 35px;
+  align-items: center;
+  padding: clamp(1.5rem, 4vw, 3.5rem);
+  gap: 3rem;
+  width: clamp(288px, 80vw, 550px);
+  background: #f3f3f3;
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+}
+
+.h3 {
+  font-family: "HelveticaNeue Medium", sans-serif;
+  font-size: 1.4rem;
+  color: #000;
+}
+
+.select {
+  text-align: center;
+  padding: 0.5rem;
+  width: clamp(200px, 50vw, 250px);
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2);
+  font-family: "HelveticaNeue Regular", sans-serif;
+  color: #4d4b4b;
+  font-size: 0.8rem;
+}
+
+.details-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 100%;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin: 0 2rem;
+  align-items: center;
+}
+
+.details p {
+  font-family: "HelveticaNeue Regular", sans-serif;
+  font-size: 0.8rem;
+  color: #000;
+}
+
+.details input {
+  width: clamp(16px, 33vw, 57px);
+  padding: 0.5rem;
+  text-align: center;
+  font-family: "HelveticaNeue Medium", sans-serif;
+  font-size: 0.8rem;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 9px;
+}
+
+.price-suggested {
+  font-family: "HelveticaNeue Medium", sans-serif;
+  font-size: 0.7rem;
+  color: #4d4b4b;
+}
+
+.profitability-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #f3f3f3;
+  border: 1px solid #5b5555;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  align-items: center;
+  height: 100%;
+}
+
+.profitability-container p {
+  font-family: "HelveticaNeue Medium", sans-serif;
+  font-size: 0.8rem;
+  color: #000;
+}
+
+.profit-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.img-profit {
+  width: 100px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.percentage-char {
+  font-family: "HelveticaNeue Medium", sans-serif;
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.input-rentabilidad {
+  width: clamp(16px, 33vw, 80px);
+  padding: 0.5rem;
+  text-align: center;
+  font-family: "HelveticaNeue Medium", sans-serif;
+  font-size: 1.5rem;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 9px;
+  height: 100%;
+}
+
+.input-rentabilidad:focus {
+  outline: none;
+}
+
+.results-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 1rem;
+}
+
+.total-profit {
+  font-family: "HelveticaNeue Medium", sans-serif;
+  font-size: 1.5rem;
+  color: #000;
+}
+
+@media (max-width: 480px) {
+  .details {
+    margin: 0 1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .profitability-container {
+    padding: 1rem;
+  }
+}

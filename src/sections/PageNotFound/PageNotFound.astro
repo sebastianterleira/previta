@@ -1,0 +1,224 @@
+---
+import { Image } from "astro:assets";
+
+import Image_1 from "../../assets/img/ComingSoon/img-1.jpg";
+import Image_2 from "../../assets/img/ComingSoon/img-2.jpg";
+import Image_3 from "../../assets/img/ComingSoon/img-3.jpg";
+import Image_4 from "../../assets/img/ComingSoon/img-4.jpg";
+---
+
+<script>
+  import { gsap } from "gsap";
+
+  import { ScrollTrigger } from "gsap/ScrollTrigger";
+  
+  const LocomotiveScroll = (await import("locomotive-scroll")).default;
+
+  const locomotiveScroll = new LocomotiveScroll();
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const cards = [
+      { id: "#card-1", endTranslateX: -2000, rotate: 45 },
+      { id: "#card-2", endTranslateX: -1000, rotate: -30 },
+      { id: "#card-3", endTranslateX: -2000, rotate: 45 },
+      { id: "#card-4", endTranslateX: -1500, rotate: -30 },
+    ];
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.fromTo(
+      ".container",
+      { opacity: 0 },
+      { opacity: 1, delay: 1, duration: 3, ease: "power1.out" },
+    );
+
+    // Scroll horizontal
+    ScrollTrigger.create({
+      trigger: ".wrapper-404",
+      start: "top top",
+      end: "+=820vh",
+      scrub: 5,
+      pin: true,
+      onUpdate: (self) => {
+        gsap.to(".wrapper-404", {
+          x: `${-450 * self.progress}vw`,
+          duration: 2,
+          ease: "power3.out",
+        });
+      },
+    });
+
+    // Animaciones de las cards
+    cards.forEach((card) => {
+      ScrollTrigger.create({
+        trigger: card.id,
+        start: "top top",
+        end: "+=1200vh",
+        scrub: 1,
+        onUpdate: (self) => {
+          gsap.to(card.id, {
+            x: `${card.endTranslateX * self.progress}px`,
+            rotate: `${card.rotate * self.progress * 2}`,
+            duration: 1.5,
+            ease: "power3.out",
+          });
+        },
+      });
+    });
+  });
+</script>
+
+<div class="container">
+  <nav><a href="#">Previta Care</a></nav>
+
+  <section class="wrapper-404">
+    <h1>Page Not Found</h1>
+
+    <div class="card" id="card-1">
+      <Image src={Image_1} alt="" />
+    </div>
+    <div class="card" id="card-2">
+      <Image src={Image_2} alt="" />
+    </div>
+    <div class="card" id="card-3">
+      <Image src={Image_3} alt="" />
+    </div>
+    <div class="card" id="card-4">
+      <Image src={Image_4} alt="" />
+    </div>
+  </section>
+  <section class="outro">
+    <div class="outro-content">
+      <h1>
+        This page doesn't exist anymore... but that's okay. <br />
+        We'll get you right back on the track!
+      </h1>
+      <a href="/">HOMEPAGE</a>
+    </div>
+  </section>
+</div>
+
+<style>
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+  }
+
+  h1 {
+    width: 100%;
+    color: #fff;
+    font-size: 45vw;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+    z-index: 2;
+    position: relative;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+  }
+
+  .wrapper-404 {
+    position: absolute;
+    top: 0;
+    width: 310vw;
+    height: 100vh;
+    will-change: transform;
+  }
+
+  .card {
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    background: gray;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  #card-1 {
+    top: 50%;
+    left: 15%;
+    z-index: 3;
+  }
+
+  #card-2 {
+    top: 25%;
+    left: 40%;
+    z-index: 3;
+  }
+
+  #card-3 {
+    top: 45%;
+    left: 70%;
+    z-index: 1;
+    width: 220px;
+    height: 220px;
+  }
+
+  #card-4 {
+    top: 15%;
+    left: 95%;
+    z-index: 3;
+  }
+
+  .outro {
+    position: absolute;
+    top: 165vh;
+    width: 100%;
+    height: 100vh;
+    padding: 4rem;
+  }
+
+  .outro h1 {
+    width: max-content;
+    font-size: 24px;
+    font-weight: lighter;
+    text-align: center;
+  }
+
+  .outro-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    height: 100%;
+  }
+
+  .outro-content a {
+    background-color: #f3f6fa03;
+    color: #fff;
+    padding: 0.6rem 1em;
+    border-radius: 33px;
+    font-size: 12px;
+    border: 1px solid #fff;
+    transition: background-color 0.3s ease;
+  }
+
+  .outro-content a:hover {
+    background-color: #f3f6fa34;
+  }
+
+  @media (max-width: 900px) {
+    .wrapper-404 {
+      padding-top: 20em;
+    }
+  }
+</style>

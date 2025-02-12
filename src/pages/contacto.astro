@@ -1,0 +1,99 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="PrevitaCare - Home">
+  <div class="container">
+    <div class="left">
+      <h3>Contáctanos</h3>
+      <p>
+        Envíenos una nota para iniciar la conversación, llene el formulario con
+        sus datos.
+      </p>
+      <p><strong>*MANDATORY FIELDS</strong></p>
+    </div>
+    <div class="right">
+      <h2>¿Tienes alguna pregunta? Contáctanos</h2>
+      <form>
+        <div class="form-group">
+          <input type="text" placeholder="Nombre*" required />
+          <input type="text" placeholder="Apellido*" required />
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Email*" required />
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Organización*" required />
+        </div>
+        <div class="form-group">
+          <textarea placeholder="Mensaje*" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Enviar mensaje →</button>
+      </form>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #edf2f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .container {
+    display: flex;
+    max-width: 900px;
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+  }
+  .left {
+    width: 30%;
+    padding-right: 20px;
+  }
+  .left h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+  .left p {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  .right {
+    width: 70%;
+  }
+  .right h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  .form-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  textarea {
+    resize: none;
+    height: 80px;
+  }
+  .submit-btn {
+    width: 100%;
+    padding: 10px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+</style>

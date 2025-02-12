@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'HelveticaNeue Medium';
+    src: url('/fonts/Helvetica Neue/HelveticaNeue-Medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'HelveticaNeue Regular';
+    src: url('/fonts/Helvetica Neue/HelveticaNeue-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }  
+
+  @font-face {
+    font-family: 'Previta Sans';
+    src: url('/fonts/NeueMontreal/NeueMontreal-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }  

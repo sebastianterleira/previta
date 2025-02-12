@@ -1,0 +1,52 @@
+---
+import StepIndex from "../components/Calculator/StepIndex";
+import LayoutCalculator from "../layouts/LayoutCalculator.astro";
+---
+
+<LayoutCalculator>
+  <main>
+    <header class="header-logo">
+      <h1>Profit & Care</h1>
+      <span>CALCULATOR</span>
+    </header>
+    <StepIndex client:load />
+    <div class="logo-icon">
+      <img src="/Images/logo-previta.png" width={200} alt="logo" />
+    </div>
+  </main>
+</LayoutCalculator>
+
+<style>
+  main {
+    display: flex;
+    gap: 4rem;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: clamp(1rem, 4vw, 2rem);
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .header-logo {
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-logo h1 {
+    font-size: clamp(2.5rem, 10vw, 4rem);
+  }
+
+  .header-logo span {
+    font-family: "HelveticaNeue Medium", sans-serif;
+    font-size: clamp(2rem, 10vw, 3rem);
+    text-align: center;
+  }
+
+  .logo-icon img {
+    object-fit: contain;
+    width: clamp(150px, 40vw, 200px);
+    max-width: 100%;
+  }
+</style>

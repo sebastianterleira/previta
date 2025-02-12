@@ -1,0 +1,10 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header/index";
+import Nosotros from "../sections/Nosotros/Nosotros";
+---
+
+<Layout title="PrevitaCare - Home">
+  <Header client:only theme={false} />
+  <Nosotros client:only />
+</Layout>

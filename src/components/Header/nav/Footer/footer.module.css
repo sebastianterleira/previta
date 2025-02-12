@@ -1,0 +1,22 @@
+.footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-size: 14px;
+  gap: 40px;
+  font-family: "Previta Sans", sans-serif;
+  cursor: pointer;
+}
+
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footerContainer h2 {
+  color: #fff;
+  font-size: 11px;
+  font-family: "Previta Sans", sans-serif;
+  opacity: 0.5;
+}

@@ -1,0 +1,10 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Home from "../sections/Home/Home.jsx";
+import Header from "../components/Header/index"
+---
+
+<Layout title="PrevitaCare - Home">
+  <Header client:only />
+  <Home client:only />
+</Layout>

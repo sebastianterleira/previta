@@ -1,0 +1,68 @@
+/* content.module.css */
+.content {
+  background-color: #455ce9;
+  padding: 32px 48px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Sección 2: contenedor del footer */
+.section2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.section2 p {
+  font-family: 'Previta Sans';
+  color: #fff;
+  font-size: .8rem;
+}
+
+/* Título del footer */
+.section2Heading {
+  font-size: 15vw;
+  line-height: 0.8;
+  margin-top: 40px;
+  color: #fff;
+  letter-spacing: -9.6px;
+}
+
+/* Navegación principal */
+.nav {
+  display: flex;
+  flex-shrink: 0;
+  gap: 80px;
+}
+
+/* Cada columna de navegación */
+.navColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Título de cada sección en la navegación */
+.navHeading {
+  margin-bottom: 8px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff80;
+  font-family: "Previta Sans", sans-serif;
+}
+
+.navColumn a {
+  font-family: "Previta Sans", sans-serif;
+  color: #fff;
+  width: max-content;
+  cursor: pointer;
+}
+
+.navColumn .mask {
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+}
