@@ -1,7 +1,7 @@
 /* footer.module.css */
 .container {
   position: relative;
-  height: 800px;
+  height: 250px;
   clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0 100%);
 }
 
