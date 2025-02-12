@@ -24,20 +24,7 @@ export default function Row1() {
               ref={parraf1}
               className={`${styles.parraf_1} ${styles.reverse_parraf}`}
             >
-              {title.split(" ").map((word, index) => {
-                return (
-                  <span key={index} className={styles.mask}>
-                    <motion.span
-                      variants={slideUp}
-                      custom={index}
-                      animate={isInView1 ? "open" : "closed"}
-                      key={index}
-                    >
-                      {word}
-                    </motion.span>
-                  </span>
-                );
-              })}
+              Resultados rápidos y precisos
             </p>
             <motion.p
               ref={parraf2}
