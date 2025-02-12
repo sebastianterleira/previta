@@ -4,19 +4,22 @@ import { slideUp, opacity } from "./animation";
 import { useInView, motion } from "framer-motion";
 import { useRef } from "react";
 import { linksAbout, linksSocials } from "./Links";
-import LogoBlank from "../../../../assets/img/Logos/logo-blank.png"
+import LogoBlank from "../../../../assets/img/Logos/logo-blank.png";
 
 export default function Content() {
   return (
     <div className={styles.content}>
       <Section1 />
+      <p className={styles.back_footer}>
+        Representante exclusivo de Newfoundland Diagnostics en Perú
+      </p>
     </div>
   );
 }
 
 const Section1 = () => {
   return (
-    <div>
+    <div className={styles.section1}>
       <Nav />
     </div>
   );
@@ -28,7 +31,7 @@ const Section2 = () => {
 
   return (
     <div ref={refOpacityAnimation} className={styles.section2}>
-      <img src={LogoBlank.src}/> 
+      <img src={LogoBlank.src} />
       <motion.p variants={opacity} animate={isInView ? "open" : "closed"}>
         Copyright © 2024 PrevitaCare S.A.C
       </motion.p>

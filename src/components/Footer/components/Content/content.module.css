@@ -1,7 +1,6 @@
 /* content.module.css */
 .content {
   background-color: #455ce9;
-  padding: 32px 48px;
   height: 100%;
   width: 100%;
   display: flex;
@@ -79,4 +78,17 @@
 .section2 img {
   width: 150px;
   height: 100%;
+}
+
+.back_footer {
+  font-size: 1.125rem;
+  color: #fff;
+  font-family: "PREVITA SANS";
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.section1 {
+  padding: 0 48px;
+  padding-top: 32px;
 }
