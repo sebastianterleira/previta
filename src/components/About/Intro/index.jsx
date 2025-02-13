@@ -3,8 +3,8 @@ import styles from "./intro.module.css";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import BackgroundImg from "../../../assets/img/About/Intro/img1.jpg";
-import IntroImg from "../../../assets/img/About/Intro/img2.jpg";
+import IntroImg from "../../../assets/img/About/Intro/img1.jpg";
+import BackgroundImg from "../../../assets/img/About/Intro/img2.jpg";
 
 export default function Index() {
   const background = useRef(null);

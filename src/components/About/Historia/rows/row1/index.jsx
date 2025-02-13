@@ -11,9 +11,9 @@ export default function Row1() {
   const textParraf1 =
     "Desde el principio, PrevitaCare se comprometió a ofrecer productos innovadores que no solo mejoren la calidad de vida, sino que también prevengan enfermedades crónicas y riesgos de salud, como embarazos no deseados y anemia.";
   const textParraf2 =
-    "Desde el principio, PrevitaCare se comprometió a ofrecer productos innovadores que no solo mejoren la calidad de vida, sino que también prevengan enfermedades crónicas y riesgos de salud, como embarazos no deseados y anemia.";
+    "La empresa se enfoca en empoderar a los pacientes, trabajando como aliado de confianza junto a profesionales y autoridades de salud, con el objetivo de reducir la severidad y mortalidad de enfermedades en todas las etapas de la vida. Colaborando con el sector público y privado, PrevitaCare facilita diagnósticos accesibles y tratamientos oportunos, aliviando la carga del sistema sanitario.";
   const textParraf3 =
-    "Desde el principio, PrevitaCare se comprometió a ofrecer productos innovadores que no solo mejoren la calidad de vida, sino que también prevengan enfermedades crónicas y riesgos de salud, como embarazos no deseados y anemia.";
+    "Con alianzas regionales, busca aportar innovación y fortalecer el sistema de salud, mejorando la vida de millones en la región mediante educación y prevención.";
   const parraf1 = useRef(null);
   const parraf2 = useRef(null);
   const parraf3 = useRef(null);
