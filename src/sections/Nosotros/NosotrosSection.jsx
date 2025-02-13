@@ -5,7 +5,7 @@ import Description from "../../components/About/Description";
 import Historia from "../../components/About/Historia";
 import SectionContact from "../../components/Home/SectionContact";
 import FooterIndex from "../../components/Footer";
-import Mision from "../../components/About/Mision";
+import SectionMisionVision from "../../components/About/SectionMisionVision";
 
 export default function NosotrosSection() {
   useEffect(() => {
@@ -26,7 +26,7 @@ export default function NosotrosSection() {
       <Intro />
       <Description />
       <Historia />
-      <Mision />
+      <SectionMisionVision />
       <SectionContact />
       <FooterIndex />
     </main>
