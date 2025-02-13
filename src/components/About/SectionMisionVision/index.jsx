@@ -7,8 +7,9 @@ import ImagenTest from "../../../assets/img/Body/img_1.jpg";
 import ImagenTest2 from "../../../assets/img/Body/img_4.jpg";
 
 export default function SectionMisionVision() {
-  const phrase =
+  const mision =
     "Nuestra misión es brindar productos y servicios innovadores que promuevan un estilo de vida saludable y fortalezcan a los pacientes a través de la educación.";
+  const vision = "Convertirnos en la referencia de Latinoamérica en soluciones de salud y bienestar, destacando por nuestra innovación y dedicación a la prevención como pilares de una vida plena."
   const description = useRef(null);
   const isInView = useInView(description);
 
@@ -23,7 +24,7 @@ export default function SectionMisionVision() {
         <div className={styles.content_container}>
           <h2>Misión</h2>
           <p>
-            {phrase.split(" ").map((word, index) => {
+            {mision.split(" ").map((word, index) => {
               return (
                 <span key={index} className={styles.mask}>
                   <motion.span
@@ -46,7 +47,7 @@ export default function SectionMisionVision() {
         <div className={styles.content_container}>
           <h2>Visión</h2>
           <p>
-            {phrase.split(" ").map((word, index) => {
+            {vision.split(" ").map((word, index) => {
               return (
                 <span key={index} className={styles.mask}>
                   <motion.span
