@@ -9,7 +9,8 @@ import ImagenTest2 from "../../../assets/img/Body/img_4.jpg";
 export default function SectionMisionVision() {
   const mision =
     "Nuestra misión es brindar productos y servicios innovadores que promuevan un estilo de vida saludable y fortalezcan a los pacientes a través de la educación.";
-  const vision = "Convertirnos en la referencia de Latinoamérica en soluciones de salud y bienestar, destacando por nuestra innovación y dedicación a la prevención como pilares de una vida plena."
+  const vision =
+    "Convertirnos en la referencia de Latinoamérica en soluciones de salud y bienestar, destacando por nuestra innovación y dedicación a la prevención como pilares de una vida plena.";
   const description = useRef(null);
   const isInView = useInView(description);
 
